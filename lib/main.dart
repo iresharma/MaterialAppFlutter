@@ -1,17 +1,14 @@
 import 'package:flutter/material.dart';
-void main() {
-    runApp()
-}
+import 'package:flutter/cupertino.dart';
+import 'current.dart';
 
-class umm extends StatelessWidget {
+void main() => runApp(app());
+
+class app  extends StatelessWidget {
     @override
     Widget build(BuildContext context) {
         return MaterialApp(
-            home: Scaffold(
-                appBar: AppBar(
-                    title: Text('App'),
-                ),
-            ),
-        ),
-    }
+            home: current(),
+        );
+  }
 }
